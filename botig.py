@@ -80,7 +80,7 @@ def comment_on_recent_posts(max_comments=5, comment_text="Super post !"):
         logging.error(f"Erreur lors des commentaires : {e}")
 
 # Exemple d'utilisation
-hashtags = ["innovation", "startup", "machinelearning", "webdevelopment", "digitalmarketing"]
+hashtags = ["holiday", "christmass"]
 
 for hashtag in hashtags:
     follow_users_by_hashtag(hashtag, max_follows=10)  # Suivre jusqu'à 10 utilisateurs par hashtag
