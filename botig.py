@@ -20,7 +20,7 @@ logging.basicConfig(
 )
 
 # Initialisation du bot
-bot = Bot(debug=True)
+bot = Bot(Log_level="DEBUG")
 
 try:
     # Connexion au compte Instagram
