@@ -20,7 +20,8 @@ logging.basicConfig(
 )
 
 # Initialisation du bot
-bot = Bot()
+bot = Bot(debug=True)
+bot.login(username="your_username", password="your_password)
 
 try:
     # Connexion au compte Instagram
