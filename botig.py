@@ -41,7 +41,7 @@ def follow_users_by_hashtag(hashtag, max_follows=10):
             bot.follow(user)
             logging.info(f"Suivi de l'utilisateur {user}")
             count += 1
-            time.sleep(random.randint(30, 90))  # Pause aléatoire pour imiter un comportement humain
+            time.sleep(random.randint(90, 120))  # Pause aléatoire pour imiter un comportement humain
     except Exception as e:
         logging.error(f"Erreur lors du suivi des utilisateurs pour le hashtag {hashtag} : {e}")
 
@@ -58,7 +58,7 @@ def like_recent_posts_of_followed_users(max_likes=10):
                 bot.like(post)
                 logging.info(f"Like sur le post {post}")
                 count += 1
-                time.sleep(random.randint(10, 30))  # Pause aléatoire
+                time.sleep(random.randint(30, 60))  # Pause aléatoire
     except Exception as e:
         logging.error(f"Erreur lors du like des posts : {e}")
 
@@ -75,12 +75,12 @@ def comment_on_recent_posts(max_comments=5, comment_text="Super post !"):
                 bot.comment(post, comment_text)
                 logging.info(f"Commentaire sur le post {post}: {comment_text}")
                 count += 1
-                time.sleep(random.randint(20, 60))  # Pause aléatoire
+                time.sleep(random.randint(90, 120))  # Pause aléatoire
     except Exception as e:
         logging.error(f"Erreur lors des commentaires : {e}")
 
 # Exemple d'utilisation
-hashtags = ["coding", "programming", "developer", "technology", "python", "innovation", "love", "entrepreneur", "motivation", "startup", "digitalmarketing", "singlelife", "webdevelopment", "gaming", "ai", "machinelearning", "dataanalysis", "iphone", "appdevelopment", "codingcommunity"]
+hashtags = ["innovation", "startup", "machinelearning", "webdevelopment", "digitalmarketing"]
 
 for hashtag in hashtags:
     follow_users_by_hashtag(hashtag, max_follows=10)  # Suivre jusqu'à 10 utilisateurs par hashtag
