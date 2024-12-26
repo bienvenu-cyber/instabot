@@ -1,0 +1,54 @@
+2024-12-26 14:14:44,339 - INFO - Instabot version: 0.117.0 Started
+2024-12-26 14:14:44,339 - DEBUG - Bot imported from /Users/bv/miniconda3/lib/python3.12/site-packages/instabot/bot/bot.py
+2024-12-26 14:14:44,339 - INFO - Utilisation du proxy : http://your_proxy_address:your_proxy_port
+2024-12-26 14:14:44,340 - INFO - Not yet logged in starting: PRE-LOGIN FLOW!
+2024-12-26 14:14:44,352 - WARNING - Failed to parse: http://your_proxy_address:your_proxy_port
+2024-12-26 14:14:44,355 - WARNING - Failed to parse: http://your_proxy_address:your_proxy_port
+2024-12-26 14:14:44,359 - WARNING - Failed to parse: http://your_proxy_address:your_proxy_port
+2024-12-26 14:14:44,360 - WARNING - Failed to parse: http://your_proxy_address:your_proxy_port
+2024-12-26 14:14:44,360 - ERROR - Erreur de connexion : 'csrftoken'
+2024-12-26 14:19:54,047 - INFO - Instabot Started
+2024-12-26 14:19:54,047 - INFO - Utilisation du proxy : http://your_proxy_address:your_proxy_port
+2024-12-26 14:19:54,059 - WARNING - Failed to parse: http://your_proxy_address:your_proxy_port
+2024-12-26 14:19:54,059 - INFO - Connexion réussie au compte Instagram.
+2024-12-26 14:19:54,059 - ERROR - Erreur lors du suivi des utilisateurs pour le hashtag holiday : 'ds_user_id'
+2024-12-26 14:19:54,059 - ERROR - Erreur lors du like des posts : 'ds_user_id'
+2024-12-26 14:19:54,060 - ERROR - Erreur lors des commentaires : 'ds_user_id'
+2024-12-26 14:19:54,060 - ERROR - Erreur lors du suivi des utilisateurs pour le hashtag christmass : 'ds_user_id'
+2024-12-26 14:19:54,060 - ERROR - Erreur lors du like des posts : 'ds_user_id'
+2024-12-26 14:19:54,060 - ERROR - Erreur lors des commentaires : 'ds_user_id'
+2024-12-26 14:19:54,064 - INFO - Bot stopped. Worked: 0:00:00.017792
+2024-12-26 14:19:54,064 - INFO - Total requests: 1
+2024-12-26 14:19:54,067 - INFO - Déconnexion réussie.
+2024-12-26 14:19:54,068 - INFO - Bot stopped. Worked: 0:00:00.021732
+2024-12-26 14:19:54,068 - INFO - Total requests: 1
+2024-12-26 14:23:02,449 - INFO - Instabot Started
+2024-12-26 14:23:02,450 - INFO - Utilisation du proxy : http://your_proxy_address:your_proxy_port
+2024-12-26 14:23:02,461 - WARNING - Failed to parse: http://your_proxy_address:your_proxy_port
+2024-12-26 14:23:02,462 - INFO - Connexion réussie au compte Instagram.
+2024-12-26 14:23:02,462 - ERROR - Erreur lors du suivi des utilisateurs pour le hashtag holiday : 'ds_user_id'
+2024-12-26 14:23:02,462 - ERROR - Erreur lors du like des posts : 'ds_user_id'
+2024-12-26 14:23:02,462 - ERROR - Erreur lors des commentaires : 'ds_user_id'
+2024-12-26 14:23:02,463 - ERROR - Erreur lors du suivi des utilisateurs pour le hashtag christmass : 'ds_user_id'
+2024-12-26 14:23:02,463 - ERROR - Erreur lors du like des posts : 'ds_user_id'
+2024-12-26 14:23:02,463 - ERROR - Erreur lors des commentaires : 'ds_user_id'
+2024-12-26 14:23:02,463 - INFO - Bot stopped. Worked: 0:03:08.417012
+2024-12-26 14:23:02,465 - INFO - Total requests: 1
+2024-12-26 14:23:02,465 - INFO - Déconnexion réussie.
+2024-12-26 14:23:02,466 - INFO - Bot stopped. Worked: 0:03:08.419367
+2024-12-26 14:23:02,466 - INFO - Total requests: 1
+2024-12-26 14:25:41,915 - INFO - Instabot Started
+2024-12-26 14:25:41,916 - INFO - Utilisation du proxy : http://your_proxy_address:your_proxy_port
+2024-12-26 14:25:41,928 - WARNING - Failed to parse: http://your_proxy_address:your_proxy_port
+2024-12-26 14:25:41,930 - INFO - Connexion réussie au compte Instagram.
+2024-12-26 14:25:41,930 - ERROR - Erreur lors du suivi des utilisateurs pour le hashtag holiday : 'ds_user_id'
+2024-12-26 14:25:41,930 - ERROR - Erreur lors du like des posts : 'ds_user_id'
+2024-12-26 14:25:41,930 - ERROR - Erreur lors des commentaires : 'ds_user_id'
+2024-12-26 14:25:41,930 - ERROR - Erreur lors du suivi des utilisateurs pour le hashtag christmass : 'ds_user_id'
+2024-12-26 14:25:41,930 - ERROR - Erreur lors du like des posts : 'ds_user_id'
+2024-12-26 14:25:41,931 - ERROR - Erreur lors des commentaires : 'ds_user_id'
+2024-12-26 14:25:41,932 - INFO - Bot stopped. Worked: 0:05:47.885649
+2024-12-26 14:25:41,932 - INFO - Total requests: 1
+2024-12-26 14:25:41,932 - INFO - Déconnexion réussie.
+2024-12-26 14:25:41,938 - INFO - Bot stopped. Worked: 0:05:47.891485
+2024-12-26 14:25:41,938 - INFO - Total requests: 1

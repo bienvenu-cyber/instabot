@@ -1,0 +1,7 @@
+2024-12-26 14:14:44,339 - instabot version: 0.117.0 (bot) - INFO - Instabot version: 0.117.0 Started
+2024-12-26 14:14:44,339 - instabot version: 0.117.0 (bot) - DEBUG - Bot imported from /Users/bv/miniconda3/lib/python3.12/site-packages/instabot/bot/bot.py
+2024-12-26 14:14:44,340 - instabot version: 0.117.0 (api_login) - INFO - Not yet logged in starting: PRE-LOGIN FLOW!
+2024-12-26 14:14:44,352 - instabot version: 0.117.0 (api) - WARNING - Failed to parse: http://your_proxy_address:your_proxy_port
+2024-12-26 14:14:44,355 - instabot version: 0.117.0 (api) - WARNING - Failed to parse: http://your_proxy_address:your_proxy_port
+2024-12-26 14:14:44,359 - instabot version: 0.117.0 (api) - WARNING - Failed to parse: http://your_proxy_address:your_proxy_port
+2024-12-26 14:14:44,360 - instabot version: 0.117.0 (api) - WARNING - Failed to parse: http://your_proxy_address:your_proxy_port
