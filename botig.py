@@ -6,15 +6,12 @@ import logging
 from dotenv import load_dotenv
 
 # Chargement des variables d'environnement
+print("Chargement des variables d'environnement...")
 load_dotenv()
 
 # Configuration des identifiants depuis les variables d'environnement
 USERNAME = os.getenv("INSTAGRAM_USERNAME")
 PASSWORD = os.getenv("INSTAGRAM_PASSWORD")
-
-# Configuration du proxy depuis les variables d'environnement
-PROXY_ADDRESS = os.getenv("PROXY_ADDRESS")
-PROXY_PORT = os.getenv("PROXY_PORT")
 
 # Configuration de la journalisation (logs)
 logging.basicConfig(
@@ -23,14 +20,10 @@ logging.basicConfig(
     format="%(asctime)s - %(levelname)s - %(message)s"
 )
 
-# Initialisation du bot avec option de proxy
-if PROXY_ADDRESS and PROXY_PORT:
-    proxy = f"{PROXY_ADDRESS}:{PROXY_PORT}"
-    bot = Bot(proxy=proxy)
-    logging.info(f"Utilisation du proxy : {proxy}")
-else:
-    bot = Bot()
-    logging.info("Aucun proxy utilisé.")
+# Initialisation du bot sans option de proxy
+print("Initialisation du bot...")
+bot = Bot()
+logging.info("Aucun proxy utilisé.")
 
 # Vérification des identifiants
 if not USERNAME or not PASSWORD:
@@ -38,11 +31,13 @@ if not USERNAME or not PASSWORD:
     exit()
 
 # Connexion au compte Instagram
+print("Connexion au compte Instagram...")
 try:
     bot.login(username=USERNAME, password=PASSWORD)
     logging.info("Connexion réussie au compte Instagram.")
 except Exception as e:
     logging.error(f"Erreur de connexion : {e}")
+    print(f"Erreur de connexion : {e}")
     exit()
 
 # Fonction pour suivre les utilisateurs d'un hashtag spécifique

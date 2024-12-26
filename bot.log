@@ -52,3 +52,23 @@
 2024-12-26 14:25:41,932 - INFO - Déconnexion réussie.
 2024-12-26 14:25:41,938 - INFO - Bot stopped. Worked: 0:05:47.891485
 2024-12-26 14:25:41,938 - INFO - Total requests: 1
+2024-12-26 14:34:00,690 - INFO - Instabot Started
+2024-12-26 14:34:00,691 - INFO - Aucun proxy utilisé.
+2024-12-26 14:34:08,175 - INFO - Logged-in successfully as 'dailyof_rudemiss'!
+2024-12-26 14:34:08,175 - INFO - Saved cookie!
+2024-12-26 14:34:08,176 - INFO - Connexion réussie au compte Instagram.
+2024-12-26 14:34:09,097 - ERROR - Request returns 404 error!
+2024-12-26 14:34:09,098 - ERROR - Erreur lors du suivi des utilisateurs pour le hashtag holiday : Expecting value: line 1 column 1 (char 0)
+2024-12-26 14:34:10,630 - ERROR - Request returns 400 error!
+2024-12-26 14:34:10,631 - INFO - Instagram's error message: checkpoint_required
+2024-12-26 14:34:11,452 - ERROR - Request returns 404 error!
+2024-12-26 14:34:11,452 - ERROR - Erreur lors du suivi des utilisateurs pour le hashtag christmass : Expecting value: line 1 column 1 (char 0)
+2024-12-26 14:34:11,855 - ERROR - Request returns 400 error!
+2024-12-26 14:34:11,855 - INFO - Instagram's error message: checkpoint_required
+2024-12-26 14:34:11,855 - INFO - Bot stopped. Worked: 0:14:17.809163
+2024-12-26 14:34:11,856 - INFO - Total requests: 5
+2024-12-26 14:34:11,856 - INFO - Déconnexion réussie.
+2024-12-26 14:34:12,579 - ERROR - Request returns 400 error!
+2024-12-26 14:34:12,579 - INFO - Instagram's error message: checkpoint_required
+2024-12-26 14:34:12,580 - INFO - Bot stopped. Worked: 0:14:18.533263
+2024-12-26 14:34:12,580 - INFO - Total requests: 6
