@@ -12,6 +12,10 @@ load_dotenv()
 USERNAME = os.getenv("INSTAGRAM_USERNAME")
 PASSWORD = os.getenv("INSTAGRAM_PASSWORD")
 
+# Configuration du proxy depuis les variables d'environnement
+PROXY_ADDRESS = os.getenv("PROXY_ADDRESS")
+PROXY_PORT = os.getenv("PROXY_PORT")
+
 # Configuration de la journalisation (logs)
 logging.basicConfig(
     filename="bot.log", 
@@ -19,11 +23,22 @@ logging.basicConfig(
     format="%(asctime)s - %(levelname)s - %(message)s"
 )
 
-# Initialisation du bot
-bot = Bot()
+# Initialisation du bot avec option de proxy
+if PROXY_ADDRESS and PROXY_PORT:
+    proxy = f"{PROXY_ADDRESS}:{PROXY_PORT}"
+    bot = Bot(proxy=proxy)
+    logging.info(f"Utilisation du proxy : {proxy}")
+else:
+    bot = Bot()
+    logging.info("Aucun proxy utilisé.")
 
+# Vérification des identifiants
+if not USERNAME or not PASSWORD:
+    logging.error("Les identifiants Instagram ne sont pas définis.")
+    exit()
+
+# Connexion au compte Instagram
 try:
-    # Connexion au compte Instagram
     bot.login(username=USERNAME, password=PASSWORD)
     logging.info("Connexion réussie au compte Instagram.")
 except Exception as e:
@@ -38,9 +53,11 @@ def follow_users_by_hashtag(hashtag, max_follows=10):
         for user in users:
             if count >= max_follows:
                 break
-            bot.follow(user)
-            logging.info(f"Suivi de l'utilisateur {user}")
-            count += 1
+            if bot.follow(user):
+                logging.info(f"Suivi de l'utilisateur {user}")
+                count += 1
+            else:
+                logging.warning(f"Échec du suivi de l'utilisateur {user}")
             time.sleep(random.randint(90, 120))  # Pause aléatoire pour imiter un comportement humain
     except Exception as e:
         logging.error(f"Erreur lors du suivi des utilisateurs pour le hashtag {hashtag} : {e}")
@@ -55,9 +72,11 @@ def like_recent_posts_of_followed_users(max_likes=10):
             for post in posts[:5]:  # Liker les 5 premiers posts
                 if count >= max_likes:
                     break
-                bot.like(post)
-                logging.info(f"Like sur le post {post}")
-                count += 1
+                if bot.like(post):
+                    logging.info(f"Like sur le post {post}")
+                    count += 1
+                else:
+                    logging.warning(f"Échec du like sur le post {post}")
                 time.sleep(random.randint(30, 60))  # Pause aléatoire
     except Exception as e:
         logging.error(f"Erreur lors du like des posts : {e}")
@@ -72,12 +91,19 @@ def comment_on_recent_posts(max_comments=5, comment_text="Super post !"):
             for post in posts[:3]:  # Commenter les 3 premiers posts
                 if count >= max_comments:
                     break
-                bot.comment(post, comment_text)
-                logging.info(f"Commentaire sur le post {post}: {comment_text}")
-                count += 1
+                if bot.comment(post, comment_text):
+                    logging.info(f"Commentaire sur le post {post}: {comment_text}")
+                    count += 1
+                else:
+                    logging.warning(f"Échec du commentaire sur le post {post}")
                 time.sleep(random.randint(90, 120))  # Pause aléatoire
     except Exception as e:
         logging.error(f"Erreur lors des commentaires : {e}")
+
+# Fonction pour envoyer des alertes en cas d'erreurs critiques
+def send_alert(message):
+    # Implémentez une méthode pour envoyer des alertes, par exemple par email
+    logging.info(f"Envoi d'une alerte : {message}")
 
 # Exemple d'utilisation
 hashtags = ["holiday", "christmass"]
@@ -93,3 +119,6 @@ try:
     logging.info("Déconnexion réussie.")
 except Exception as e:
     logging.error(f"Erreur lors de la déconnexion : {e}")
+
+# Rappel pour tester régulièrement le bot et respecter les conditions d'utilisation d'Instagram
+# Assurez-vous de tester régulièrement le bot et de respecter les conditions d'utilisation d'Instagram.
